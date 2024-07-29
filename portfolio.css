@@ -497,7 +497,7 @@ section{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% -50%) rotate(-90deg);
+    transform: translate(-50%, -50%) rotate(-90deg);
     width: 120px;
     height: 160px;
 }
@@ -514,7 +514,7 @@ section{
 
 @keyframes animate-bar {
     100%{
-        stroke-dashoffset: -1;
+        stroke-dashoffset: -1;;
     }
 }
 
@@ -527,32 +527,32 @@ section{
     stroke-linecap: round;
 }
 
-.path-1{animation: animate-path1 1s 1s linear forwards}
-.path-2{animation: animate-path2 1s 1s linear forwards}
-.path-3{animation: animate-path3 1s 1s linear forwards}
-.path-4{animation: animate-path4 1s 1s linear forwards}
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
 
 @keyframes animate-path1{
     100%{
-        stroke-dashoffset: 90;
+        stroke-dashoffset: 50;;
     }
 } 
 
 @keyframes animate-path2{
     100%{
-        stroke-dashoffset: 120;
+        stroke-dashoffset: 175;;
     }
 }
 
 @keyframes animate-path3{
     100%{
-        stroke-dashoffset: 75;
+        stroke-dashoffset: 125;;
     }
 }
 
 @keyframes animate-path4{
     100%{
-        stroke-dashoffset: 50;
+        stroke-dashoffset: 75;;
     }
 }
 
@@ -599,10 +599,10 @@ section{
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(420px,1fr));
     grid-gap: 40px;
     margin-top: 40px;
-    padding: 120px;
+    padding: 100px;
 }
 
 .row{
@@ -622,7 +622,7 @@ section{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(black,crimson);
+    background: linear-gradient(white,crimson);
     position: absolute;
     border-radius: 8px;
     left: 0;
